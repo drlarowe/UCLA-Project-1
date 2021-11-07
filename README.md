@@ -57,11 +57,13 @@ Machines within the network can only be accessed by JumpBox.
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Name      | Publicly Accessible | IP Address    |   |   |
+|-----------|---------------------|---------------|---|---|
+| JumpBox   | Yes                 | 68.107.66.213 |   |   |
+| Web1 VM   | No                  | 10.0.0.4      |   |   |
+| Web2 VM   | No                  | 10.0.0.4      |   |   |
+| Web3 VM   | No                  | 10.0.0.4      |   |   |
+| BRASIL-VM | No                  | 10.0.0.4      |   |   |
 
 ### Elk Configuration
 
