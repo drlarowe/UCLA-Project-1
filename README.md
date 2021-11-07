@@ -79,7 +79,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+https://github.com/drlarowe/UCLA-Project-1/blob/3eab42bc56aadda896292fe84a30456ba04432e7/Images/docker_ps_output.PNG
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -96,15 +96,24 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the playbook.yml file to _____.
+- Copy the filebeat-config.yml file to /etc/ansible/roles.
 - Update the /ansible/hosts file to include the IPs of the 3 virtual machines created (Web1-10.0.0.7, Web2-10.0.0.8, Web3-10.0.0.9)
 - Run the playbook, and navigate to http://20.197.178.215:5601/app/kibana to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? The /ansible/hosts file must be updated
+- _Which file is the playbook? Where do you copy it?
+  
+  The playbook file is filebeat-playbook.yml and it is copied to /etc/ansible/files.
+  
+- _Which file do you update to make Ansible run the playbook on a specific machine?
+ 
+  The /ansible/hosts file must be updated
+  
 - How do I specify which machine to install the ELK server on versus which to install Filebeat on? 
-- By specificying the name of the group which the server falls under
-- _Which URL do you navigate to in order to check that the ELK server is running? http://20.197.178.215:5601/app/kibana
+  
+  By specificying the name of the group which the server falls under
+  
+- _Which URL do you navigate to in order to check that the ELK server is running? 
+ 
+  http://20.197.178.215:5601/app/kibana
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
