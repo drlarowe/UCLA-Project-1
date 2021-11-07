@@ -100,11 +100,12 @@ SSH into the control node and follow the steps below:
 - Update the /ansible/hosts file to include the IPs of the 3 virtual machines created (Web1-10.0.0.7, Web2-10.0.0.8, Web3-10.0.0.9)
 - Run the playbook, and navigate to http://20.197.178.215:5601/app/kibana to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? The /ansible/hosts file must be updated
+- _Which file is the playbook? Where do you copy it?
+- _Which file do you update to make Ansible run the playbook on a specific machine? 
+  The /ansible/hosts file must be updated
 - How do I specify which machine to install the ELK server on versus which to install Filebeat on? 
-- By specificying the name of the group which the server falls under
-- _Which URL do you navigate to in order to check that the ELK server is running? http://20.197.178.215:5601/app/kibana
+  By specificying the name of the group which the server falls under
+- _Which URL do you navigate to in order to check that the ELK server is running? 
+  http://20.197.178.215:5601/app/kibana
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
