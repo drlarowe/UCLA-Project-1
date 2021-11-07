@@ -50,26 +50,20 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the JumpBox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- 68.107.66.213
+- Local Host (My Public IP)
 
 Machines within the network can only be accessed by JumpBox.
 - Which machine did you allow to access your ELK VM? JumpBox IP 10.0.0.4
 
 A summary of the access policies in place can be found in the table below.
 
-+-----------+---------------------+---------------+--+--+
-| Name      | Publicly Accessible | IP Address    |  |  |
-+-----------+---------------------+---------------+--+--+
-| JumpBox   | Yes                 | 68.107.66.213 |  |  |
-+-----------+---------------------+---------------+--+--+
-| Web1 VM   | No                  | 10.0.0.4      |  |  |
-+-----------+---------------------+---------------+--+--+
-| Web2 VM   | No                  | 10.0.0.4      |  |  |
-+-----------+---------------------+---------------+--+--+
-| Web3 VM   | No                  | 10.0.0.4      |  |  |
-+-----------+---------------------+---------------+--+--+
-| BRASIL-VM | Yes                 | 10.0.0.4      |  |  |
-+-----------+---------------------+---------------+--+--+
+| Name      | Publicly Accessible | Allowed IP Address        |   |   |
+|-----------|---------------------|---------------------------|---|---|
+| JumpBox   | Yes                 | Local Host (My Public IP) |   |   |
+| Web1 VM   | No                  | 10.0.0.4                  |   |   |
+| Web2 VM   | No                  | 10.0.0.4                  |   |   |
+| Web3 VM   | No                  | 10.0.0.4                  |   |   |
+| BRASIL-VM | Yes                 | 10.0.0.4                  |   |   |
 
 ### Elk Configuration
 
